@@ -10,18 +10,16 @@ import {
 
 const router = createBrowserRouter([
   {
-    path: "/", // Page d'accueil
-    element: <Users />, // Affiche UserComponent sur la page d'accueil
-    children: [
-      {
-        path: "/users", // Notez le retrait du "/" pour définir un chemin relatif
-        element: <Users />
-      },
-      {
-        path: "/posts", // Notez le retrait du "/" pour définir un chemin relatif
-        element: <Posts />
-      },
-    ]
+    path: "/",
+    element: <Users />,
+  },
+  {
+    path: "/users",
+    element: <Users />
+  },
+  {
+    path: "/posts",
+    element: <Posts />
   },
 ]);
 
